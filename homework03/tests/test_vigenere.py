@@ -2,14 +2,14 @@ import random
 import string
 import unittest
 
-import vigenere
+from homework03 import vigenere
 
 
 class VigenereTestCase(unittest.TestCase):
     def test_encrypt(self):
         cases = [
-            ("PYTHON", "A", "PYTHON"),
             ("python", "a", "python"),
+            ("PYTHON", "A", "PYTHON"),
             ("introduction to python", "lsci", "tfvzzvwkeaqv lq aqvpzf"),
             ("ATTACKATDAWN", "LEMON", "LXFOPVEFRNHR"),
         ]
